@@ -27,5 +27,32 @@
     "isPublic": {
       "boolean": {}
     }
+  },
+  "Product": {
+    "name_product": {
+      "string": {}
+    },
+    "type": {
+      "regexp": "#[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+	"price":{
+		"int":{
+			"min":200,
+			"max":1000
+			}
+	}
+  },
+  
+  "Offer": {
+    "name_product": {
+      "string": {}
+    },
+    "price": {
+      "int":{
+			"min":200,
+			"max":1000
+			}
+    }
   }
+  
 }
